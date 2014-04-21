@@ -1,0 +1,1444 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="shortcut icon" href="media/images/favicon.ico">
+        <title>Resource Monitoring | Trelleborg Sealing Solutions</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="media/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet"  media="screen" href="media/css/bootstrap-datetimepicker.css" />
+        <link rel="stylesheet"  media="screen" href="media/css/bootstrap-checkbox.css" />
+        <link rel="stylesheet"  media="screen" href="media/css/bootstrap-combobox.css" />
+        <link href="media/css/dashboard.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="media/css/datepicker.css">
+        <link href="media/css/style.css" rel="stylesheet">
+
+        <!-- Custom styles for this template -->
+        <link rel="stylesheet" type="text/css" href="media/css/tss_header.css">
+        <link href="media/css/DT_bootstrap.css" rel="stylesheet">
+
+        <!-- Font awesome css -->
+        <link rel="stylesheet" href="media/css/font-awesome.min.css">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+              <script src="media/js/html5shiv.js"></script>
+              <script src="media/js/respond.min.js"></script>
+            <![endif]-->
+
+        <!--#include file="tss_header.html" -->
+
+
+    </head>
+
+    <body>
+        <!-- Header Tag -->
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                    <div title="Trelleborg Sealing Solutions - Resource Monitoring" class="navbar-brand"><a href="index.html"><img src="media/images/tss_logo.png" alt="Trelleborg Sealing Solutions - Resource Monitoring"   /></a></div>
+                    <div class="pull-left applicationBrand"><img src="media/images/tssRM.png" alt="Trelleborg Sealing Solutions - Resource Monitoring"   /></div>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <div class="navbar-right topRightsection">
+                        <div class="row">
+                            <div class="tss_welcomeMessage navbar-left"><span class="glyphicon glyphicon-user"></span> Welcome! Ferdinand </div>
+                            <!-- <form class="navbar-form navbar-right" role="search">
+                              <div class="form-group">
+                                <input type="text" class="form-control input-sm" placeholder="Search">
+                              </div>
+                              <button type="submit" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-search"></span></button>
+                            </form> -->
+                        </div>
+                        <div class="row">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li class="dropdown drpLang"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span>Language</span> <b class="caret"></b></a>
+                                    <ul class="dropdown-menu drpLangMenu">
+                                        <li><a href="#">English</a></li>
+                                        <li role="presentation" class="divider"></li>
+                                        <li><a href="#">Another Language</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown"> <a href="#"  title="Settings" class="dropdown-toggle" data-toggle="dropdown">Settings <b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li role="presentation"></li>               
+                                        <li><a href="#">Exit</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+
+        <!-- Header Tag ends -->
+
+
+        <div class="clearfix"></div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-3 col-md-2 sidebar side-nav-closed" id="sidebar">
+                    <div class="accordion nav nav-sidebar" id="leftMenu">
+                        <div class="leftToggleContainer" style=""><i title="toggle sidebar" class=" fa-lg left-toggle-arrow fa fa-angle-double-right" id="toggle-left"></i> </div>
+                        <div class="accordion-group">
+                            <div class="accordion-heading active"> 
+
+                                <a href="#" title="Tasks" class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu"><span class="task_image_active"></span><span class = "dashboard-txt">Tasks</span></a> </div>          
+
+                        </div>
+                        <div class="accordion-group">
+                            <div class="accordion-heading in-active"> <a href="#" title="Task Manager" class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu"> <span class="task_manager_inactive"></span><span class = "dashboard-txt">Task Manager</span> </a> </div>
+
+                        </div>
+                        <div class="accordion-group">
+                            <div class="accordion-heading in-active"> <a href="#" title="ADP" class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu"> <span class="adp_inactive"></span><span class = "dashboard-txt">ADP</span></a> </div>
+                        </div>
+                        <div class="accordion-group">
+                            <div class="accordion-heading in-active"> 
+                                <a href="#collapseTwo" title="Admin" class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu"><span class="admin_image_active"></span><span class = "dashboard-txt">Admin</span></a>
+                            </div>
+                            <div style="height: auto;" class="accordion-body collapse " id="collapseTwo">
+                                <div class="accordion-inner">
+                                    <ul class="nav nav-sidebar navsubmenu">
+                                        <li><a title="Add" href="#"><i></i>
+                                                <span class="add_user_image_inactive"></span>
+                                                <span class="dashboard-txt"> Add </span>
+                                            </a></li>
+                                        <li><a title="Mapping" href="#"><i></i>
+                                                <span class="mapping_image_inactive"></span>
+                                                <span class="dashboard-txt"> Mapping </span>
+                                            </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-69 col-sm-offset-3 col-md-10 col-md-offset-2 main right-content-closed right-content-opened" id="content">
+
+                    <!-- Date search Panel -->
+
+                    <div class=""> 		
+                        <div class="date-left-panel">
+                            <div class="pull-left btn-div-prev">
+                                <button title="Previous" type="button" class="btn btn-default btn-cal-next">					 
+                                    <i class="fa fa-angle-left fa-lg"></i>
+                                </button>	
+                            </div>	             
+
+                            <div class="input-group date form_datetime pull-left" data-date-format="dd-mm-yyyy" style=""  >
+                                <input class="form-control" type="text" value="" >                    
+                                <span class="input-group-addon input-date-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                            </div>
+                            <div class="pull-left btn-div-next">
+                                <button title="Next" type="button" class="btn btn-default btn-cal-next">
+                                    <i class="fa fa-angle-right fa-lg"></i>
+                                </button>	
+                            </div>	
+                            <div class=" col-sm-6 col-md-3 pull-left action-message-placeholder ">
+                                <div class="alert alert-warning">
+                                    <a data-dismiss="alert" class="close" href="#">×</a>
+                                    <!-- <i class="fa  fa-info-circle fa-lg"></i> -->
+                                    Data saved successfully.
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-md-custom3 pull-left">
+                                <p class="last-user-info">User last logged in 11/4/2013 with 5 hours entered.</p>
+                            </div>
+
+                            <!--  Reset all button -->
+                            <div class="clearbtn-panel pull-right">
+                                <!-- <button type="button" class="btn btn-default clearfields" > Reset</button> -->
+                                <a class="btn btn-default clearfields  btn-customized" href="#">
+                                    <i class="fa fa-refresh"></i>
+                                    <span class="btn-txt">Reset</span></a>
+                            </div>	
+
+                        </div>					
+
+                    </div>
+
+                    <div class="clearboth" ></div>
+
+
+                    <!-- Search Task Type Panel -->
+                    <div class="panel-group  SearchTaskPanel" id="accordionSearch">
+                        <div class="panel panel-default">
+                            <div class="panel-heading outer-panel">			
+                                <a class="panel-title collapsed" title="Search Tasks" data-toggle="collapse" data-parent="#accordion2" href="#Panelone">
+                                    <h4 class=""><span class="task-hdr">Search Task</span> <i class="indicator fa fa-angle-down fa-lg pull-right"></i></h4> 
+                                </a>	
+                            </div>
+                            <div id="Panelone" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered" id="tasks">
+                                        <thead>
+                                            <tr>
+                                                <th>Task Type</th>
+                                                <th>Serial No</th>
+                                                <th>Year</th>
+                                                <th>Task Name</th>
+                                                <th>Responsible Person</th>
+                                                <th>Customer Name</th>
+                                                <th>Requestor</th>
+                                                <th>Contact Person Requestor</th>
+                                                <th>Task Creation Date</th>
+                                                <th>Add to Favourites</th>
+
+                                            </tr>
+                                            <tr>
+                                                <td ><input id="stasktype"  type="text" name="search_engine" value="Search Task" class="search_init" /></td>
+                                                <td ><input id="sserial" type="text" name="search_browser" value="Search Serial No" class="search_init " /></td>
+                                                <td><input type="text" name="search_platform" value="Search Year" class="search_init" /></td>
+                                                <td><input type="text" name="search_version" value="Search Description" class="search_init" /></td>
+                                                <td><input type="text" name="search_grade" value="Search Responsible person" class="search_init " /></td>
+                                                <td><input type="text" name="customer_name" value="Customer Name" class="search_init " /></td>
+                                                <td><input type="text" name="Requestor_name" value="Requestor" class="search_init" /> </td>
+                                                <td><input type="text" name="Contact_Person_Requestor" value="Contact Person Requestor"/></td>
+                                                <td><input type="text" name="Task_Creation_Date" value="Task Creation Date"/></td>
+                                                <td><input type="text" name="search_1" class="search_init " /></td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr >
+                                                <td>ET</td>
+                                                <td>1</td>
+                                                <td>2013</td>
+                                                <td class="center">Scraper for piston of hydraulic breaker</td>
+                                                <td class="center">Ferdinand Krauss</td>
+                                                <td class="center">Rainer</td>
+                                                <td>Sales</td>
+                                                <td>Ferdinand</td>
+                                                <td>12-03-2014</td>
+                                                <td>1</td>
+                                            </tr>
+                                            <tr >
+                                                <td>ET</td>
+                                                <td>2</td>
+                                                <td>2013</td>
+                                                <td class="center">Scraper for piston of hydraulic breaker</td>
+                                                <td class="center"></td>
+                                                <td class="center">Martin</td>
+                                                <td>Supplier</td>
+                                                <td>Ferdinand</td>
+                                                <td>12-03-2014</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr >
+                                                <td>ET</td>
+                                                <td>3</td>
+                                                <td>2013</td>
+                                                <td class="center">Scraper for piston of hydraulic breaker</td>
+                                                <td class="center"></td>
+                                                <td class="center">Joerg</td>
+                                                <td>R & D</td>
+                                                <td>Martina</td>
+                                                <td>28-03-2014</td>
+                                                <td>1</td>
+                                            </tr>
+                                            <tr >
+                                                <td>ET</td>
+                                                <td>4</td>
+                                                <td>2014</td>
+                                                <td class="center">GGI Windpower, Roto L</td>
+                                                <td class="center"></td>
+                                                <td class="center">Joerg</td>
+                                                <td>Product Management</td>
+                                                <td>Eberhard</td>
+                                                <td>28-03-2014</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr >
+                                                <td>ET</td>
+                                                <td>5</td>
+                                                <td>2014</td>
+                                                <td class="center">GGI Windpower, Roto L</td>
+                                                <td class="center"></td>
+                                                <td class="center">Rainer</td>
+                                                <td>Sales</td>
+                                                <td>Eberhard</td>
+                                                <td>26-03-2014</td>
+                                                <td>1</td>
+                                            </tr>
+                                            <tr >
+                                                <td>ET</td>
+                                                <td>6</td>
+                                                <td>2014</td>
+                                                <td class="center">GGI Windpower, Roto L</td>
+                                                <td class="center">Ferdinand Krauss</td>
+                                                <td class="center">Ursula</td>
+                                                <td>Supplier</td>
+                                                <td>Martina</td>
+                                                <td>26-03-2014</td>
+                                                <td>1</td>
+                                            </tr>
+                                            <tr class="gradeA">
+                                                <td>TC</td>
+                                                <td>1</td>
+                                                <td>2014</td>
+                                                <td class="center">GGI Windpower, Roto L</td>
+                                                <td class="center"></td>
+                                                <td class="center">Ursula</td>
+                                                <td>R & D</td>
+                                                <td>Eberhard</td>
+                                                <td>15-12-2013</td>
+                                                <td>1</td>
+                                            </tr>
+                                            <tr class="gradeA">
+                                                <td>TC</td>
+                                                <td>2</td>
+                                                <td>2014</td>
+                                                <td class="center">Materialentwicklung, Einführung von TeamCenter, neue Dichtungskonzepte</td>
+                                                <td class="center"></td>
+                                                <td class="center">Rainer</td>
+                                                <td>Product Management</td>
+                                                <td>Eberhard</td>
+                                                <td>15-12-2013</td>
+                                                <td>1</td>
+                                            </tr>
+                                            <tr class="gradeA">
+                                                <td>TC</td>
+                                                <td>3</td>
+                                                <td>2014</td>
+                                                <td class="center">Condition Monitoring Systems, Sensorik, intelligent sealings</td>
+                                                <td class="center"></td>
+                                                <td class="center">Hermann</td>
+                                                <td>Sales</td>
+                                                <td>Rainer</td>
+                                                <td>07-08-2013</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr class="gradeA">
+                                                <td>TC</td>
+                                                <td>4</td>
+                                                <td>2014</td>
+                                                <td class="center">Condition Monitoring Systems, Sensorik, intelligent sealings</td>
+                                                <td class="center">Ferdinand Krauss</td>
+                                                <td class="center">Hermann</td>
+                                                <td>Supplier</td>
+                                                <td>Eberhard</td>
+                                                <td>07-08-2013</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr class="gradeA">
+                                                <td>TC</td>
+                                                <td>5</td>
+                                                <td>2014</td>
+                                                <td class="center">Condition Monitoring Systems, Sensorik, intelligent sealings</td>
+                                                <td class="center"></td>
+                                                <td class="center">Hermann</td>
+                                                <td>R & D</td>
+                                                <td>Rainer</td>
+                                                <td>07-08-2013</td>
+                                                <td>1</td>
+                                            </tr>
+                                            <tr class="gradeA">
+                                                <td>TC</td>
+                                                <td>6</td>
+                                                <td>2014</td>
+                                                <td class="center">Condition Monitoring Systems, Sensorik, intelligent sealings</td>
+                                                <td class="center"></td>
+                                                <td class="center">Rainer</td>
+                                                <td>Product Management</td>
+                                                <td>Rainer</td>
+                                                <td>07-01-2014</td>
+                                                <td>1</td>
+                                            </tr>
+                                            <tr class="gradeA">
+                                                <td>TC</td>
+                                                <td>7</td>
+                                                <td>2013</td>
+                                                <td class="center">Condition Monitoring Systems, Sensorik, intelligent sealings</td>
+                                                <td class="center">Ferdinand Krauss</td>
+                                                <td class="center">Hermann</td>
+                                                <td>Sales</td>
+                                                <td>Rainer</td>
+                                                <td>07-01-2014</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr class="gradeA">
+                                                <td>TC</td>
+                                                <td>8</td>
+                                                <td>2014</td>
+                                                <td class="center">Abstreifer WD17</td>
+                                                <td class="center"></td>
+                                                <td class="center">Martin</td>
+                                                <td>Supplier</td>
+                                                <td>Monica</td>
+                                                <td>07-01-2014</td>
+                                                <td>1</td>
+                                            </tr>
+                                            <tr class="gradeA">
+                                                <td>TC</td>
+                                                <td>9</td>
+                                                <td>2014</td>
+                                                <td class="center">Abstreifer WD17</td>
+                                                <td class="center"></td>
+                                                <td class="center">Monica</td>
+                                                <td>R & D</td>
+                                                <td>Monica</td>
+                                                <td>08-02-2014</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr class="gradeA">
+                                                <td>TC</td>
+                                                <td>10</td>
+                                                <td> 2013</td>
+                                                <td class="center">Abstreifer WD17</td>
+                                                <td class="center"></td>
+                                                <td class="center">Monica</td>
+                                                <td>Product Management</td>
+                                                <td>Requestor3</td>
+                                                <td>08-02-2014</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr class="gradeA">
+                                                <td>TC</td>
+                                                <td>11</td>
+                                                <td>2013</td>
+                                                <td class="center">Abstreifer WD17</td>
+                                                <td class="center"></td>
+                                                <td class="center">Monica</td>
+                                                <td>Sales</td>
+                                                <td>Monica</td>
+                                                <td>08-02-2014</td>
+                                                <td>1</td>
+                                            </tr>
+                                            <tr class="gradeA">
+                                                <td>TC</td>
+                                                <td>12</td>
+                                                <td>2013</td>
+                                                <td class="center">Abstreifer WD17</td>
+                                                <td class="center"></td>
+                                                <td class="center">Monica</td>
+                                                <td>Supplier</td>
+                                                <td>Monica</td>
+                                                <td>08-02-2014</td>
+                                                <td>0</td>
+                                            </tr>
+
+                                            <tr class="gradeA">
+                                                <td>ET</td>
+                                                <td>1</td>
+                                                <td>2014</td>
+                                                <td class="center">Anfragen, Hotline, Support</td>
+                                                <td class="center"></td>
+                                                <td class="center">Rainer</td>
+                                                <td>R & D</td>
+                                                <td>Monica</td>
+                                                <td>26-03-2014</td>
+                                                <td>1</td>
+                                            </tr>
+                                            <tr class="gradeA">
+                                                <td>TC</td>
+                                                <td>2</td>
+                                                <td>2014</td>
+                                                <td class="center">Anfragen, Hotline, Support</td>
+                                                <td class="center"></td>
+                                                <td class="center">Martin</td>
+                                                <td>Product Management</td>
+                                                <td>Monica</td>
+                                                <td>26-03-2014</td>
+                                                <td>0</td>
+                                            </tr>														
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>	
+
+                    <!-- Favourites Panel -->	
+                    <div class="panel-group FavouritePanel" id="accordionFavourite">
+                        <div class="panel panel-default">
+                            <div class="panel-heading outer-panel">			
+                                <a class="panel-title collapsed" title="Favourites" data-toggle="collapse" data-parent="#accordion2" href="#Paneltwo">
+                                    <h4 class=""><span class="task-hdr">Favourites</span><i class="indicator fa fa-angle-down fa-lg pull-right"></i> 
+                                    </h4> 
+                                </a>
+                            </div>
+                            <div id="Paneltwo" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered" id="Favouritetasks">			
+
+                                        <thead>
+                                            <tr>
+                                                <th>Task Type</th>
+                                                <th>Serial No</th>
+                                                <th>Year</th>
+                                                <th>Task Name</th>
+                                                <th>Responsible Person</th>
+                                                <th>Customer Name</th>	
+                                                <th>Requester</th>
+                                                <th>Contact Person Requestor</th>
+                                                <th>Task Creation Date</th>		
+                                                <th>Delete from Favourites</th>										
+                                            </tr>
+                                            <tr>
+                                                <td ><input id="ftasktype"  type="text" name="search_engine" value="Search Task" class="Favourite_search_init" /></td>
+                                                <td ><input id="fserial" type="text" name="search_browser" value="Search Serial No" class="Favourite_search_init " /></td>
+                                                <td><input type="text" name="search_platform" value="Search Year" class="Favourite_search_init" /></td>
+                                                <td><input type="text" name="search_version" value="Search Description" class="Favourite_search_init" /></td>
+                                                <td><input type="text" name="search_res_person" value="Responsible Person" class="Favourite_search_init"/> </td>
+                                                <td><input type="text" name="search_cus_name" value="Customer Name" class="Favourite_search_init"/> </td>	
+                                                <td><input type="text" name="search_requester" value="Requester" class="Favourite_search_init" /></td>		
+                                                <td><input type="text" name="search_Contact_person_Requestor" value="Contact Person Requestor" class="Favourite_search_init" /></td>
+                                                <td><input type="text" name="search_task_date" value="Task Creation Date" class="Favourite_search_init" /></td>	
+                                                <td><input type="text" name="search_delete_favourite" value="Delete Favourite" class="Favourite_search_init" /></td>					
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr >
+                                                <td>ET</td>
+                                                <td>1</td>
+                                                <td>2013</td>
+                                                <td class="center">Anfragen, Hotline, Support</td>
+                                                <td class="center"></td>
+                                                <td class="center">Rainer</td>	
+                                                <td>Sales</td>
+                                                <td>Eberhard</td>	
+                                                <td>26-03-2014</td>
+                                                <td> <i class="fa fa-trash-o fa-lg deleteFav"></i> </td>
+                                            </tr>									
+                                            <tr >
+                                                <td>ET</td>
+                                                <td>3</td>
+                                                <td>2013</td>
+                                                <td class="center">Anfragen, Hotline, Support</td>	
+                                                <td class="center"></td>
+                                                <td class="center">Monica</td>	
+                                                <td>Supplier</td>	
+                                                <td>Martin</td>	
+                                                <td>26-03-2014</td>
+                                                <td> <i class="fa fa-trash-o fa-lg deleteFav"></i> </td>						
+                                            </tr>									
+                                            <tr >
+                                                <td>ET</td>
+                                                <td>5</td>
+                                                <td>2014</td>
+                                                <td class="center">Anfragen, Hotline, Support</td>
+                                                <td class="center"></td>
+                                                <td class="center">Ursula</td>	
+                                                <td>Sales</td>
+                                                <td>Martin</td>	
+                                                <td>28-03-2014</td>		
+                                                <td> <i class="fa fa-trash-o fa-lg deleteFav"></i> </td>							
+                                            </tr>
+                                            <tr >
+                                                <td>ET</td>
+                                                <td>6</td>
+                                                <td>2014</td>
+                                                <td class="center">GGI Windpower, Roto L</td>
+                                                <td class="center"></td>
+                                                <td class="center">Hermann</td>
+                                                <td>Supplier</td>
+                                                <td>Martin</td>	
+                                                <td>28-03-2014</td>	
+                                                <td> <i class="fa fa-trash-o fa-lg deleteFav"></i> </td>									
+                                            </tr>
+                                            <tr class="gradeA">
+                                                <td>TC</td>
+                                                <td>1</td>
+                                                <td>2014</td>
+                                                <td class="center">GGI Windpower, Roto L</td>
+                                                <td class="center"></td>
+                                                <td class="center">Ursula</td>	
+                                                <td>R & D</td>
+                                                <td>Martin</td>										
+                                                <td>15-07-2013	</td>
+                                                <td> <i class="fa fa-trash-o fa-lg deleteFav"></i> </td>
+                                            </tr>
+                                            <tr class="gradeA">
+                                                <td>TC</td>
+                                                <td>2</td>
+                                                <td>2014</td>
+                                                <td class="center">GGI Windpower, Roto L</td>
+                                                <td class="center"></td>
+                                                <td class="center">Hermann</td>	
+                                                <td>R & D</td>
+                                                <td>Martin</td>										
+                                                <td>15-07-2013</td>
+                                                <td> <i class="fa fa-trash-o fa-lg deleteFav"></i> </td>
+                                            </tr>
+                                            <tr class="gradeA">
+                                                <td>TC</td>
+                                                <td>5</td>
+                                                <td>2014</td>
+                                                <td class="center">Condition Monitoring Systems, Sensorik, intelligent sealings</td>
+                                                <td class="center"></td>
+                                                <td class="center">Wolfgang</td>
+                                                <td>Sales</td>	
+                                                <td>Martin</td>	
+                                                <td>15-07-2013</td>	
+                                                <td> <i class="fa fa-trash-o fa-lg deleteFav"></i> </td>								
+                                            </tr>
+                                            <tr class="gradeA">
+                                                <td>TC</td>
+                                                <td>6</td>
+                                                <td>2014</td>
+                                                <td class="center">Condition Monitoring Systems, Sensorik, intelligent sealings</td>	
+                                                <td class="center">Ferdinand Krauss</td>
+                                                <td class="center">Joerg</td>	
+                                                <td>Supplier</td>
+                                                <td>Martin</td>	
+                                                <td>26-09-2013</td>								
+                                                <td> <i class="fa fa-trash-o fa-lg deleteFav"></i> </td>
+                                            </tr>
+                                            <tr class="gradeA">
+                                                <td>TC</td>
+                                                <td>8</td>
+                                                <td>2014</td>
+                                                <td class="center">Condition Monitoring Systems, Sensorik, intelligent sealings</td>	
+                                                <td class="center">Ferdinand Krauss</td>
+                                                <td class="center">Wolfgang</td>
+                                                <td>Product Management</td>		
+                                                <td>Martin</td>		
+                                                <td>26-09-2013</td>		
+                                                <td> <i class="fa fa-trash-o fa-lg deleteFav"></i> </td>								
+                                            </tr>
+                                            <tr class="gradeA">
+                                                <td>TC</td>
+                                                <td>11</td>
+                                                <td>2014</td>
+                                                <td class="center">Scraper for piston of hydraulic breaker</td>
+                                                <td class="center"></td>
+                                                <td class="center">Wolfgang</td>
+                                                <td>Product Management</td>	
+                                                <td>Martin</td>		
+                                                <td>26-09-2013</td>	
+                                                <td> <i class="fa fa-trash-o fa-lg deleteFav"></i> </td>										
+                                            </tr>
+                                            <tr class="gradeA">
+                                                <td>CX</td>
+                                                <td>1</td>
+                                                <td>2014</td>
+                                                <td class="center">Scraper for piston of hydraulic breaker</td>
+                                                <td class="center"></td>
+                                                <td class="center">Joerg</td>
+                                                <td>R & D</td>
+                                                <td>Ferdinand</td>	
+                                                <td>28-03-2014</td>	
+                                                <td> <i class="fa fa-trash-o fa-lg deleteFav"></i> </td>												
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+
+                    <!-- Collective Tasks Panel -->
+                    <div class="panel-group CollectiveTaskPanel" id="accordionCollective">
+                        <div class="panel panel-default">
+                            <div class="panel-heading outer-panel">			
+                                <a class="panel-title collapsed" title="Collective Tasks" data-toggle="collapse" data-parent="#accordion2" href="#Panelthree">
+                                    <h4 class=""> <span class="task-hdr">Collective Tasks</span><i class="indicator fa fa-angle-down fa-lg  pull-right"></i></h4> 
+                                </a>	
+                            </div>
+                            <div id="Panelthree" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered" id="Collectivetasks">
+                                        <thead>
+                                            <tr>
+                                                <th>Task Type</th>
+                                                <th>Serial No</th>							
+                                                <th>Task Name</th>	
+                                                <th>Requestor</th>	
+                                                <th>Add to Favourites</th>												
+                                            </tr>
+                                            <tr>
+                                                <td ><input id="ctasktype"  type="text" name="search_engine" value="Search Task" class="collective_search_init" /></td>
+                                                <td ><input id="cserial" type="text" name="search_browser" value="Search Serial No" class="collective_search_init " /></td>							
+                                                <td><input type="text" name="search_version" value="Search Description" class="collective_search_init" /></td>	
+                                                <td><input type="text" name="search_requestor" value="Requestor" class="collective_search_init" /></td>
+                                                <td><input type="text" name="search_favourites" value="Favourites" class="collective_search_init" /></td>							
+                                            </tr>
+                                        </thead>
+                                        <tbody>																	
+                                            <tr class="gradeA">
+                                                <td>CX</td>
+                                                <td>1</td>							
+                                                <td class="center">Scraper for piston of hydraulic breaker</td>		
+                                                <td>Sales</td>		
+                                                <td>1</td>			
+                                            </tr>
+                                            <tr class="gradeA">
+                                                <td>CX</td>
+                                                <td>2</td>							
+                                                <td class="center">Scraper for piston of hydraulic breaker</td>	
+                                                <td>Supplier</td>
+                                                <td>0</td>
+
+                                            </tr>
+                                            <tr class="gradeA">
+                                                <td>CX</td>
+                                                <td>3</td>							
+                                                <td class="center">GGI Windpower, Roto L</td>		
+                                                <td>R & D</td>
+                                                <td>1</td>
+                                            </tr>
+                                            <tr class="gradeA">
+                                                <td>CX</td>
+                                                <td>4</td>							
+                                                <td class="center">GGI Windpower, Roto L</td>	
+                                                <td>Product Management</td>					
+                                                <td>0</td>
+                                            </tr>
+
+                                        <tfoot>
+
+                                        </tfoot>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+
+
+                    <!-- Human activities starts   -->
+                    <div class="fieldsetPanel">    
+                        <div class="clearboth"></div>
+                        <div class="panel-group " id="accordion2">
+                            <div class="panel panel-default">
+                                <div class="panel-heading outer-panel">			
+                                    <a class="panel-title collapsed" title="Human" data-toggle="collapse" data-parent="#accordion2" href="#one">
+                                        <h4 class=""> 
+                                            <span class="txt-pos">Human </span>
+                                            <span class="clearAllImage ClearBtn-pos clearAllBtn"><span class="btn-txt">Clear</span></span>
+                                            <i class="indicator fa fa-angle-down fa-lg pull-right"></i></h4> 				
+                                    </a>	
+                                </div>
+                                <div id="one" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <table class="table table-striped table-bordered HumanActTbl">	
+                                            <thead>
+                                                <tr>
+                                                    <th Colspan="3">Activities <span class="subScript">(in hours)</span></th>
+
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="left-activity-align">
+                                                            <input type="number" align="middle" class="input-sm input-time-entry" value="1.25" />	              			
+                                                        </div>
+                                                        <div class="right-activity-align">
+                                                            <label class="activity-label">Development</label>
+                                                        </div>					              		
+                                                    </td>
+                                                    <td>
+                                                        <div class="left-activity-align">
+                                                            <input type="number" align="middle" class="input-sm input-time-entry" value="1.25" />	              			
+                                                        </div>
+                                                        <div class="right-activity-align">
+                                                            <label class="activity-label">Support</label>
+                                                        </div>					              		
+                                                    </td>					              
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="left-activity-align">
+                                                            <input type="number" align="middle" class="input-sm input-time-entry" value="1.25" />	              			
+                                                        </div>
+                                                        <div class="right-activity-align">
+                                                            <label class="activity-label">Documentation</label>
+                                                        </div>					              		
+                                                    </td>
+                                                    <td>
+                                                        <div class="left-activity-align">
+                                                            <input type="number" align="middle" class="input-sm input-time-entry" value="1.25" />	              			
+                                                        </div>
+                                                        <div class="right-activity-align">
+                                                            <label class="activity-label">Management</label>
+                                                        </div>					              		
+                                                    </td>								  
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="left-activity-align">
+                                                            <input type="number" align="middle" class="input-sm input-time-entry" value="1.25" />	              			
+                                                        </div>
+                                                        <div class="right-activity-align">
+                                                            <label class="activity-label">Communication internal</label>
+                                                        </div>					              		
+                                                    </td>
+                                                    <td>
+                                                        <div class="left-activity-align">
+                                                            <input type="number" align="middle" class="input-sm input-time-entry" value="1.25" />	              			
+                                                        </div>
+                                                        <div class="right-activity-align">
+                                                            <label class="activity-label">Communication external</label>
+                                                        </div>					              		
+                                                    </td> 
+                                                </tr>					           
+                                                <tr>
+                                                    <td>
+                                                        <div class="left-activity-align">
+                                                            <input type="number" align="middle" class="input-sm input-time-entry" value="1.25" />	              			
+                                                        </div>
+                                                        <div class="right-activity-align">
+                                                            <label class="activity-label">Administration</label>
+                                                        </div>					              		
+                                                    </td> 
+                                                    <td>
+                                                        <div class="left-activity-align">
+                                                            <input type="number" align="middle" class="input-sm input-time-entry" value="1.25" />	              			
+                                                        </div>
+                                                        <div class="right-activity-align">
+                                                            <label class="activity-label">Infrastructure</label>
+                                                        </div>					              		
+                                                    </td>				             
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>		    
+                    </div>
+                    <!-- Human activities ends -->
+
+
+                    <!-- Machine activities starts  -->
+                    <div class="fieldsetPanel">   
+                        <div class="clearboth"></div>
+
+                        <div class="panel-group " id="accordionTR-acivity">
+                            <div class="panel panel-default">
+                                <div class="panel-heading outer-panel">
+
+                                    <a class="panel-title collapsed" title="Machine" data-toggle="collapse"  data-parent="#accordionTR-acivity" href="#testrig-one">
+                                        <h4 class="">
+                                            <span class="txt-pos" > Machine</span>
+                                            <span class="clearAllImage ClearBtn-pos clearAllBtn" ><span class="btn-txt">Clear</span></span>
+                                            <i class="indicator fa fa-angle-down fa-lg  pull-right"></i></h4> 		       
+                                    </a>
+
+                                </div>
+                                <div id="testrig-one" class="panel-collapse collapse ">
+                                    <div class="panel-body">	 
+                                        <table class="table table-striped table-bordered MachineActTbl">
+                                            <thead>
+                                                <tr>
+                                                    <th>
+                                            <div class="paneldivide">Activities <span class="subScript">(in hours)</span></div>
+
+                                            <div class="panel-spacing" >						      			
+                                                <label class="pull-left">
+                                                    <input type="radio" name="testRigActivity" value="TestrigActivityDevelopment" />
+                                                    Development
+                                                </label>	
+                                            </div>
+                                            <div class="panel-spacing"  >						      				      			
+                                                <label class="pull-left">
+                                                    <input type="radio" name="testRigActivity" value="TestrigActivitysupport" />
+                                                    Support
+                                                </label>
+                                            </div>
+                                            </th>
+                                            </tr>
+                                            </thead>
+                                        </table>     			        	
+
+                                        <div class="Activitypanel displayhide ">
+                                            <!-- Machine activity favourites  -->
+                                            <div class="panel-group  Inner-Panel" id="accordionTRFavourites">
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading">									
+                                                        <a class="panel-title Inner-title collapsed" data-toggle="collapse"  data-parent="#accordionTRFavourites" href="#testrig-two">
+                                                            <h4 class=""> Favourites <i class="indicator fa fa-plus  pull-right"></i></h4> 
+                                                        </a>
+
+                                                    </div>
+                                                    <div id="testrig-two" class="panel-collapse collapse ">
+                                                        <div class="panel-body">
+                                                            <table class="table table-striped table-bordered testRigTbl">
+
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="left-activity-align">
+                                                                                <input type="number" align="middle" class="input-sm input-time-entry" value="" />	              			
+                                                                            </div>
+                                                                            <div class="right-activity-txt-align">
+                                                                                <label class="activity-label">Permeation</label>
+                                                                            </div>	
+                                                                            <div class="right-activity-icon-align">
+                                                                                <i class="fa fa-trash-o fa-lg cursorpointer addFav"></i>
+                                                                            </div>				              		
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="left-activity-align">
+                                                                                <input type="number" align="middle" class="input-sm input-time-entry" value="" />	              			
+                                                                            </div>
+                                                                            <div class="right-activity-txt-align">
+                                                                                <label class="activity-label">Fahrb_Aggr_1</label>
+                                                                            </div>	
+                                                                            <div class="right-activity-icon-align">
+                                                                                <i class="fa fa-trash-o fa-lg cursorpointer addFav"></i>
+                                                                            </div>				              		
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>			                     
+                                                                        <td>
+                                                                            <div class="left-activity-align">
+                                                                                <input type="number" align="middle" class="input-sm input-time-entry" value="" />	              			
+                                                                            </div>
+                                                                            <div class="right-activity-txt-align">
+                                                                                <label class="activity-label">Tension test (WP)</label>
+                                                                            </div>	
+                                                                            <div class="right-activity-icon-align">
+                                                                                <i class="fa fa-trash-o fa-lg cursorpointer addFav"></i>
+                                                                            </div>				              		
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="left-activity-align">
+                                                                                <input type="number" align="middle" class="input-sm input-time-entry" value="" />	              			
+                                                                            </div>
+                                                                            <div class="right-activity-txt-align">
+                                                                                <label class="activity-label">Klimakammer (WP)</label>
+                                                                            </div>	
+                                                                            <div class="right-activity-icon-align">
+                                                                                <i class="fa fa-trash-o fa-lg cursorpointer addFav"></i>
+                                                                            </div>				              		
+                                                                        </td>										  	  
+                                                                    </tr>
+                                                                    <tr>	
+                                                                        <td>
+                                                                            <div class="left-activity-align">
+                                                                                <input type="number" align="middle" class="input-sm input-time-entry" value="" />	              			
+                                                                            </div>
+                                                                            <div class="right-activity-txt-align">
+                                                                                <label class="activity-label">Compression test</label>
+                                                                            </div>	
+                                                                            <div class="right-activity-icon-align">
+                                                                                <i class="fa fa-trash-o fa-lg cursorpointer addFav"></i>
+                                                                            </div>				              		
+                                                                        </td> 
+                                                                    </tr>
+
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>  
+
+                                            <!-- Machine activity machine lists -->
+                                            <div class="panel-group  Inner-Panel" id="accordionTRMachineLists">
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading">	
+                                                        <a class="panel-title Inner-title collapsed" data-toggle="collapse" data-parent="#accordionTRMachineLists" href="#testrig-four">
+                                                            <h4 class=""> Machine Lists <i class="indicator fa fa-plus  pull-right"></i></h4> 
+                                                        </a>	
+                                                    </div>
+                                                    <div id="testrig-four" class="panel-collapse collapse">
+                                                        <div class="panel-body">
+                                                            <table class="table table-striped table-bordered testRigTbl">
+
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="left-activity-align">
+                                                                                <input type="number" align="middle" class="input-sm input-time-entry" value="" /> 
+                                                                            </div>
+                                                                            <div class="right-activity-txt-align">
+                                                                                <label class="activity-label">H2 Aero</label>
+                                                                            </div>	
+                                                                            <div class="right-activity-icon-align">
+                                                                                <i class="fa fa-star cursorpointer addFav"></i>
+                                                                            </div>				              		
+                                                                        </td> 
+
+                                                                        <td>
+                                                                            <div class="left-activity-align">
+                                                                                <input type="number" align="middle" class="input-sm input-time-entry" value="" />	
+                                                                            </div>
+                                                                            <div class="right-activity-txt-align">
+                                                                                <label class="activity-label">Radialforce</label>
+                                                                            </div>	
+                                                                            <div class="right-activity-icon-align">
+                                                                                <i class="fa fa-star cursorpointer addFav"></i>
+                                                                            </div>				              		
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>			                     
+                                                                        <td>
+                                                                            <div class="left-activity-align">
+                                                                                <input type="number" align="middle" class="input-sm input-time-entry" value="" />	              			
+                                                                            </div>
+                                                                            <div class="right-activity-txt-align">
+                                                                                <label class="activity-label">Klimakammer</label>
+                                                                            </div>	
+                                                                            <div class="right-activity-icon-align">
+                                                                                <i class="fa fa-star addFav cursorpointer disbleColor"></i>
+                                                                            </div>				              		
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="left-activity-align">
+                                                                                <input type="number" align="middle" class="input-sm input-time-entry" value="" />	              			
+                                                                            </div>
+                                                                            <div class="right-activity-txt-align">
+                                                                                <label class="activity-label">Permeation</label>
+                                                                            </div>	
+                                                                            <div class="right-activity-icon-align">
+                                                                                <i class="fa fa-star addFav cursorpointer disbleColor"></i>
+                                                                            </div>				              		
+                                                                        </td>										  	  
+                                                                    </tr>
+                                                                    <tr>	
+                                                                        <td>
+                                                                            <div class="left-activity-align">
+                                                                                <input type="number" align="middle" class="input-sm input-time-entry" value="" />
+                                                                            </div>
+                                                                            <div class="right-activity-txt-align">
+                                                                                <label class="activity-label">Fahrb_Aggr_1</label>
+                                                                            </div>	
+                                                                            <div class="right-activity-icon-align">
+                                                                                <i class="fa fa-star addFav cursorpointer disbleColor"></i>
+                                                                            </div>				              		
+                                                                        </td>	
+                                                                        <td>
+                                                                            <div class="left-activity-align">
+                                                                                <input type="number" align="middle" class="input-sm input-time-entry" value="" />
+                                                                            </div>
+                                                                            <div class="right-activity-txt-align">
+                                                                                <label class="activity-label">PN3</label>
+                                                                            </div>	
+                                                                            <div class="right-activity-icon-align">
+                                                                                <i class="fa fa-star addFav cursorpointer disbleColor"></i>
+                                                                            </div>				              		
+                                                                        </td>		
+                                                                    </tr>
+
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>				  
+                                            </div>
+
+                                        </div>
+
+                                    </div>		     
+                                </div>
+                            </div>
+                        </div>	   
+                    </div>
+                    <!-- Machine activities ends  -->
+
+
+
+                    <!-- Standardized activity starts here  -->
+                    <div class="fieldsetPanel"> 	  	
+                        <div class="clearboth"></div>
+                        <div class="panel-group " id="accordionSSD-acivity">
+                            <div class="panel panel-default">
+                                <div class="panel-heading outer-panel">			
+                                    <a class="panel-title collapsed" title="Standardized" data-toggle="collapse"  data-parent="#accordionSSD-acivity" href="#SDaccordion-one">
+                                        <h4 class="">
+                                            <span class="txt-pos" >Standardized </span>
+                                            <span class="clearAllImage ClearBtn-pos clearAllBtn" ><span class="btn-txt">Clear</span></span>
+                                            <i class="indicator fa fa-angle-down fa-lg  pull-right"></i></h4> 		       
+                                    </a>		
+                                </div>
+                                <div id="SDaccordion-one" class="panel-collapse collapse ">
+                                    <div class="panel-body">   
+                                        <table class="table table-striped table-bordered StandardisedActTbl">
+                                            <thead>
+                                                <tr>
+                                                    <th>
+                                            <div class="paneldivide">Activities <span class="subScript">(in number of times)</span></div>
+
+                                            <div class="panel-spacing" >						      			
+                                                <label class="pull-left">
+                                                    <input type="radio" name="SSDActivity" value="SSDActivityDevelopment" />
+                                                    Development
+                                                </label>	
+                                            </div>
+                                            <div class="panel-spacing"  >						      				      			
+                                                <label class="pull-left">
+                                                    <input type="radio" name="SSDActivity" value="SSDActivitysupport" />
+                                                    Support
+                                                </label>
+                                            </div>
+                                            </th>
+                                            </tr>
+                                            </thead>
+                                        </table>
+
+                                        <div class="Activitypanel displayhide">
+                                            <!-- Standardised activity Favourites -->
+                                            <div class="panel-group  Inner-Panel" id="accordionSSD-Favourites">
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading">		
+                                                        <a class="panel-title Inner-title collapsed" data-toggle="collapse" data-parent="#accordionSSD-Favourites" href="#SSDaccordion-two">
+                                                            <h4 class=""> Favourites <i class="indicator fa fa-plus  pull-right"></i></h4> 
+                                                        </a>	
+                                                    </div>
+                                                    <div id="SSDaccordion-two" class="panel-collapse collapse">
+                                                        <div class="panel-body">
+                                                            <table class="table table-striped table-bordered standarizedTbl">								                
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="left-activity-align">
+                                                                                <input type="number" align="middle" class="input-sm input-time-entry" value="" />	              			
+                                                                            </div>
+                                                                            <div class="right-activity-txt-align">
+                                                                                <label class="activity-label">Hardness Shore A / D</label>
+                                                                            </div>	
+                                                                            <div class="right-activity-icon-align">
+                                                                                <i class="fa fa-trash-o fa-lg cursorpointer addFav"></i>
+                                                                            </div>				              		
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="left-activity-align">
+                                                                                <input type="number" align="middle" class="input-sm input-time-entry" value="" />	              			
+                                                                            </div>
+                                                                            <div class="right-activity-txt-align">
+                                                                                <label class="activity-label">Tensile test and compression test for FEM calculation with heating chamber (old method)</label>
+                                                                            </div>	
+                                                                            <div class="right-activity-icon-align">
+                                                                                <i class="fa fa-trash-o fa-lg cursorpointer addFav"></i>
+                                                                            </div>				              		
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="left-activity-align">
+                                                                                <input type="number" align="middle" class="input-sm input-time-entry" value="" />	              			
+                                                                            </div>
+                                                                            <div class="right-activity-txt-align">
+                                                                                <label class="activity-label">Tensile test and compression test for FEM calculation at 23°C (new method)</label>
+                                                                            </div>	
+                                                                            <div class="right-activity-icon-align">
+                                                                                <i class="fa fa-trash-o fa-lg cursorpointer addFav"></i>
+                                                                            </div>				              		
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="left-activity-align">
+                                                                                <input type="number" align="middle" class="input-sm input-time-entry" value="" />	              			
+                                                                            </div>
+                                                                            <div class="right-activity-txt-align">
+                                                                                <label class="activity-label">Sonder-/Begleittätigkeit für Einzelprüfungen [Work Package]</label>
+                                                                            </div>	
+                                                                            <div class="right-activity-icon-align">
+                                                                                <i class="fa fa-trash-o fa-lg cursorpointer addFav"></i>
+                                                                            </div>				              		
+                                                                        </td>
+                                                                    </tr>		                    
+
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Standardised activity standardized activities -->
+                                            <div class="panel-group  Inner-Panel" id="accordionSSD-ST">
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading">
+                                                        <a class="panel-title Inner-title collapsed" data-toggle="collapse" data-parent="#accordionSSD-ST" href="#SSDaccordion-four">
+                                                            <h4 class="">Standardized Activities<i class="indicator fa fa-plus pull-right"></i></h4> 
+                                                        </a>		
+                                                    </div>
+                                                    <div id="SSDaccordion-four" class="panel-collapse collapse">
+                                                        <div class="panel-body">
+                                                            <table class="table table-striped table-bordered standarizedTbl">							                
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="left-activity-align">
+                                                                                <input type="number" align="middle" class="input-sm input-time-entry" value="2" name="Std-ST-hardness" />	              			
+                                                                            </div>
+                                                                            <div class="right-activity-txt-align">
+                                                                                <label class="activity-label">Hardness Shore A / D </label>
+                                                                            </div>	
+                                                                            <div class="right-activity-icon-align">
+                                                                                <i class="fa fa-user fa-lg humanactivity tooltipActivity right-icon-spacing" data-toggle="tooltip" data-placement="top" title="Development"></i>
+                                                                                <i class="fa fa-star cursorpointer addFav "></i>
+                                                                            </div>				              		
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="left-activity-align">
+                                                                                <input type="number" align="middle" class="input-sm input-time-entry" value="1" name="Std-ST-tensiontest" />	              			
+                                                                            </div>
+                                                                            <div class="right-activity-txt-align">
+                                                                                <label class="activity-label">Tension test</label>
+                                                                            </div>	
+                                                                            <div class="right-activity-icon-align">									              			
+                                                                                <i class="fa fa-star cursorpointer addFav "></i>
+                                                                            </div>				              		
+                                                                        </td>			                     
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="left-activity-align">
+                                                                                <input type="number" disabled align="middle" class="input-sm input-time-entry" />	              			
+                                                                            </div>
+                                                                            <div class="right-activity-txt-align">
+                                                                                <label class="activity-label">Tensile test and compression test for FEM calculation with heating chamber (old method)</label>
+                                                                            </div>	
+                                                                            <div class="right-activity-icon-align">									              			
+                                                                                <i class="fa fa-user fa-lg humanactivity tooltipActivity right-icon-spacing" data-toggle="tooltip" data-placement="top" title="Management"></i>
+                                                                                <i class="fa fa-star addFav cursorpointer disbleColor"></i>
+                                                                            </div>				              		
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="left-activity-align">
+                                                                                <input type="number" align="middle" class="input-sm input-time-entry" />	              			
+                                                                            </div>
+                                                                            <div class="right-activity-txt-align">
+                                                                                <label class="activity-label">Specific Gravity</label>
+                                                                            </div>	
+                                                                            <div class="right-activity-icon-align">									              			
+                                                                                <i class="fa fa-user fa-lg humanactivity tooltipActivity right-icon-spacing" data-toggle="tooltip" data-placement="top" title="Infrastructure"></i>
+                                                                                <i class="fa fa-star addFav cursorpointer disbleColor"></i>
+                                                                            </div>				              		
+                                                                        </td>					                      													   
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="left-activity-align">
+                                                                                <input type="number" align="middle" class="input-sm input-time-entry" />	              			
+                                                                            </div>
+                                                                            <div class="right-activity-txt-align">
+                                                                                <label class="activity-label">Tensile test and compression test for FEM calculation at 23°C (new method)</label>
+                                                                            </div>	
+                                                                            <div class="right-activity-icon-align">									              			
+                                                                                <i class="fa fa-user fa-lg humanactivity tooltipActivity right-icon-spacing" data-toggle="tooltip" data-placement="top" title="support"></i>
+                                                                                <i class="fa fa-star addFav cursorpointer disbleColor"></i>
+                                                                            </div>				              		
+                                                                        </td>
+                                                                    </tr>			                       							                   
+
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Standardised activity work packages -->
+                                            <div class="panel-group  Inner-Panel" id="accordionSSD-WP">
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading">	
+                                                        <a class="panel-title Inner-title collapsed" data-toggle="collapse" data-parent="#accordionSSD-WP" href="#SSDaccordion-three">
+                                                            <h4 class=""> Work Packages<i class="indicator fa fa-plus   pull-right"></i></h4> 
+                                                        </a>	
+                                                    </div>
+                                                    <div id="SSDaccordion-three" class="panel-collapse collapse">
+                                                        <div class="panel-body">
+                                                            <table class="table table-striped table-bordered standarizedTbl">
+
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="left-activity-align">
+                                                                                <input type="number" align="middle" class="input-sm input-time-entry" name="Std-WP-tensiletest" />	              			
+                                                                            </div>
+                                                                            <div class="right-activity-txt-align">
+                                                                                <label class="activity-label">Tensile test </label>
+                                                                            </div>	
+                                                                            <div class="right-activity-icon-align">									              			
+                                                                                <span class="fa fa-info-circle wrkPackage-activity tooltipActivity right-icon-spacing" data-toggle="tooltip" data-placement="top" title="" data-original-title="Hardness Shore A / D,Tension test"></span>
+                                                                                <i class="fa fa-star cursorpointer addFav disbleColor"></i>
+                                                                            </div>				              		
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="left-activity-align">
+                                                                                <input type="number" align="middle" class="input-sm input-time-entry" />	              			
+                                                                            </div>
+                                                                            <div class="right-activity-txt-align">
+                                                                                <label class="activity-label">Test in medium </label>
+                                                                            </div>	
+                                                                            <div class="right-activity-icon-align">									              			
+                                                                                <span class="fa fa-info-circle wrkPackage-activity tooltipActivity right-icon-spacing" data-toggle="tooltip" data-placement="top" title="" data-original-title="Hardness Shore A / D,Tensile test and compression test for FEM calculation with heating chamber (old method)"></span>
+                                                                                <i class="fa fa-star cursorpointer addFav "></i>
+                                                                            </div>				              		
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr> 
+                                                                        <td>
+                                                                            <div class="left-activity-align">
+                                                                                <input type="number" align="middle" class="input-sm input-time-entry" />	              			
+                                                                            </div>
+                                                                            <div class="right-activity-txt-align">
+                                                                                <label class="activity-label">Sonder-/Begleittätigkeit für Einzelprüfungen </label>
+                                                                            </div>	
+                                                                            <div class="right-activity-icon-align">									              			
+                                                                                <span class="fa fa-info-circle wrkPackage-activity tooltipActivity right-icon-spacing		" data-toggle="tooltip" data-placement="top" title="" data-original-title="Specific Gravity,Tensile test and compression test for FEM calculation at 23°C (new method)"></span>
+                                                                                <i class="fa fa-star cursorpointer addFav disbleColor"></i>
+                                                                            </div>				              		
+                                                                        </td> 
+                                                                        <td>
+                                                                            <div class="left-activity-align">
+                                                                                <input type="number" align="middle" class="input-sm input-time-entry" />	              			
+                                                                            </div>
+                                                                            <div class="right-activity-txt-align">
+                                                                                <label class="activity-label">Besprechung / Meeting / Schulung / Laborführung </label>
+                                                                            </div>	
+                                                                            <div class="right-activity-icon-align">	
+                                                                                <i class="fa fa-star cursorpointer addFav disbleColor"></i>
+                                                                            </div>				              		
+                                                                        </td> 
+                                                                    </tr>   
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>		     
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                    <!-- Standardized activity ends here  -->
+
+                    <!-- button section -->
+                    <div class="button-panel">
+                        <div class="pull-right">					
+                            <a class="btn btn-default" href="#">
+                                <i class="fa fa-times-circle"></i>
+                                <span class="btn-txt">Cancel</span>
+                            </a>		
+                            <a class="btn btn-info " href="#">
+                                <i class="fa fa-ban"></i>
+                                <span class="btn-txt">Submit</span>
+                            </a>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="clearboth"></div>
+        <!-- Footer section  starts here  -->
+        <footer class="footerLayout">			
+            <div class="pull-left">&copy;&nbsp;&nbsp;Trelleborg Sealing Solutions. All rights reserved</div>		
+        </footer>
+        <!-- Footer section  ends here  -->	
+
+
+
+
+
+
+        <!-- Bootstrap core JavaScript
+            ================================================== --> 
+        <!-- Placed at the end of the document so the pages load faster --> 
+        <script src="media/js/jquery.min.js"></script> 
+        <script src="media/js/bootstrap.min.js"></script> 
+        <script src="media/js/jquery.dataTables.js"></script> 
+        <script src="media/js/DT_bootstrap.js"></script>
+        <script src="media/js/docs.min.js"></script> 
+        <script src="media/js/moment.min.js"></script> 
+        <script src="media/js/bootstrap-datetimepicker.js"></script>
+        <script type="text/javascript" src="media/js/bootstrap-datetimepicker.js"></script>
+        <script src="media/js/bootstrap-checkbox.js"></script>
+        <!-- <script src="media/js/bootstrap-combobox.js"></script>
+        <script src="media/js/typeahead.js"></script> -->
+        <script src="media/js/bootstrap-tooltip.js"></script>
+
+
+        <script src="media/js/custom.js"></script>
+        <!-- <script src="media/js/sample1.js"></script>
+        -->
+        <script type="text/javascript">
+
+            $(document).ready(function() {
+
+                /*$('.panel-collapse').on('shown.bs.collapse', function () {
+                 $(this).prev().find(".indicator").removeClass("fa-angle-down").addClass("fa-angle-up");
+                 });
+         
+                 //The reverse of the above on hidden event:
+         
+                 $('.panel-collapse').on('hidden.bs.collapse', function () {
+                 $(this).prev().find(".indicator").removeClass("fa-angle-up").addClass("fa-angle-down");
+                 });
+                 */
+
+                $('.outer-panel > .panel-title').on('click', function() {
+                    if ($(this).find(".indicator").hasClass('fa-angle-down')) {
+                        $(this).find(".indicator").removeClass("fa-angle-down").addClass("fa-angle-up");
+                    }
+                    else {
+                        $(this).find(".indicator").removeClass("fa-angle-up").addClass("fa-angle-down");
+                    }
+                });
+                $('.Inner-title').on('click', function() {
+                    if ($(this).find(".indicator").hasClass('fa-plus')) {
+                        $(this).find(".indicator").removeClass("fa-plus").addClass("fa-minus");
+                        // $(this).parent().hover(function(){
+                        //	'background-color': '#8B9995','color': '#ffffff'});
+                        //$(this).parent().css({'background-color': '#8B9995','color': '#ffffff'});
+                        //  $(this).parent().active({'background-color': '#8B9995','color': '#ffffff'});
+                    }
+                    else {
+                        $(this).find(".indicator").removeClass("fa-minus").addClass("fa-plus");
+
+                    }
+
+                });
+
+
+
+                $('#tasks thead tr td').unbind('click');
+
+                var dateVar = new Date();
+                var monthValue = (dateVar.getMonth() + 1);
+                var dayValue = dateVar.getDate();
+                var yearValue = dateVar.getFullYear();
+                if (dateVar.getMonth().toString().length < 2)
+                    var monthValue = "0" + (dateVar.getMonth() + 1);
+                if (dateVar.getMonth().toString().length < 1)
+                    var dayValue = "0" + dateVar.getDate();
+                var dateVal = dayValue + '-' + monthValue + '-' + dateVar.getFullYear();
+
+                $('.date input').eq(0).val(dateVal);
+
+                $('.sorting select').on('change', function() {
+
+                    if ($('.sorting_desc select option:selected').val() == "") {
+                        $('.sorting_desc select option[value="' + yearValue + '"]').prop("selected", "selected");
+                        $(".sorting_desc select").trigger("change");
+
+                    }
+                    else {
+
+                        return false;
+
+                    }
+
+
+                });
+
+            });
+
+        </script>
+    </body>
+</html>
